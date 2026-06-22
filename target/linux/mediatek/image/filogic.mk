@@ -1774,6 +1774,31 @@ define Device/h3c_magic-nx30-pro
 endef
 TARGET_DEVICES += h3c_magic-nx30-pro
 
+define Device/mediatek_7981r128-mtkuboot
+  DEVICE_VENDOR := MediaTek
+  DEVICE_MODEL := 7981R128
+  DEVICE_VARIANT := (MTK U-Boot layout)
+  DEVICE_DTS := mt7981b-mediatek-7981r128-mtkuboot
+  DEVICE_DTS_DIR := ../dts-ext
+  DEVICE_PACKAGES := kmod-mt7915e kmod-mt7981-firmware mt7981-wo-firmware kmod-i2c-gpio kmod-sfp
+  UBINIZE_OPTS := -E 5
+  BLOCKSIZE := 128k
+  PAGESIZE := 2048
+  KERNEL_IN_UBI := 1
+  UBOOTENV_IN_UBI := 1
+  IMAGES := sysupgrade.itb
+  KERNEL_INITRAMFS_SUFFIX := -recovery.itb
+  KERNEL := kernel-bin | gzip
+  KERNEL_INITRAMFS := kernel-bin | lzma | \
+        fit lzma $$(KDIR)/image-$$(firstword $$(DEVICE_DTS)).dtb with-initrd | pad-to 64k
+  IMAGE/sysupgrade.itb := append-kernel | \
+        fit gzip $$(KDIR)/image-$$(firstword $$(DEVICE_DTS)).dtb external-static-with-rootfs | append-metadata
+  ARTIFACTS := preloader.bin bl31-uboot.fip
+  ARTIFACT/preloader.bin := mt7981-bl2 spim-nand-ddr3
+  ARTIFACT/bl31-uboot.fip := mt7981-bl31-uboot mediatek_7981r128
+endef
+TARGET_DEVICES += mediatek_7981r128-mtkuboot
+
 define Device/huasifei_wh3000-emmc
   DEVICE_VENDOR := Huasifei
   DEVICE_MODEL := WH3000 eMMC

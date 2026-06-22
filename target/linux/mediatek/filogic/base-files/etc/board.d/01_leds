@@ -120,6 +120,12 @@ huasifei,wh3000-emmc)
 	ucidef_set_led_netdev "wan" "WAN" "red:wan" "eth1"
 	ucidef_set_led_netdev "wlan" "WLAN" "white:wlan" "phy1-ap0"
 	;;
+mediatek,7981r128-mtkuboot)
+	ucidef_set_led_netdev "wan" "WAN" "green:wan" "eth1"
+	ucidef_set_led_netdev "lan2" "LAN" "green:lan" "lan2"
+	ucidef_set_led_netdev "wlan2g" "WLAN2G" "green:wlan-2ghz" "phy0-ap0"
+	ucidef_set_led_netdev "wlan5g" "WLAN5G" "green:wlan-5ghz" "phy1-ap0"
+	;;
 imou,hx21|\
 nokia,ea0326gmp)
 	ucidef_set_led_netdev "wan" "WAN" "green:wan" "eth1" "link"
