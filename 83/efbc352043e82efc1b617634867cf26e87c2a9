@@ -1,0 +1,66 @@
+target/linux/mediatek/image/filogic-ext.mk
+  s_008d4d14fb4f7a::t_899c23a3aba91c 138,143 gitai:{"mixed_line_ranges":[],"operations":[{"operation_id":"6a3a96885d5dfe06df639a30","tool_type":"agent","tool_id":"apply_patch","line_ranges":[{"Single":138},{"Single":143}]}]}
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.2",
+  "base_commit_sha": "83efbc352043e82efc1b617634867cf26e87c2a9",
+  "prompts": {},
+  "sessions": {
+    "s_008d4d14fb4f7a": {
+      "agent_id": {
+        "tool": "trae",
+        "id": "6a3960b3c5ddd54c4a46cb88",
+        "model": "gpt-5.5__max"
+      },
+      "human_author": "JimLee1996 <59061463@qq.com>"
+    }
+  },
+  "attestation_metadata": {
+    "target/linux/mediatek/image/filogic-ext.mk": [
+      {
+        "hash": "s_008d4d14fb4f7a::t_899c23a3aba91c",
+        "line_ranges": [
+          {
+            "Single": 138
+          },
+          {
+            "Single": 143
+          }
+        ],
+        "mixed_line_ranges": [],
+        "operations": [
+          {
+            "operation_id": "6a3a96885d5dfe06df639a30",
+            "tool_type": "agent",
+            "tool_id": "apply_patch",
+            "line_ranges": [
+              {
+                "Single": 138
+              },
+              {
+                "Single": 143
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "remote_transcripts": {
+    "s_008d4d14fb4f7a": {
+      "tool": "trae",
+      "conversation_id": "6a3960b3c5ddd54c4a46cb88",
+      "session_id": "6a3960b3c5ddd54c4a46cb88",
+      "status": "remote_only",
+      "message": "Remote transcript resolution is not implemented yet for TRAE prompts."
+    },
+    "s_008d4d14fb4f7a::t_899c23a3aba91c": {
+      "tool": "trae",
+      "conversation_id": "6a3960b3c5ddd54c4a46cb88",
+      "session_id": "6a3960b3c5ddd54c4a46cb88",
+      "status": "remote_only",
+      "message": "Remote transcript resolution is not implemented yet for TRAE prompts."
+    }
+  }
+}
