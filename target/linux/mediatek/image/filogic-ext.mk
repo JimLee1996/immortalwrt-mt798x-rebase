@@ -124,6 +124,25 @@ define Device/sl_3000-emmc
 endef
 TARGET_DEVICES += sl_3000-emmc
 
+define Device/sx_7981r128-mtkuboot
+  DEVICE_VENDOR := SX
+  DEVICE_MODEL := 7981R128
+  DEVICE_VARIANT := (MTK U-Boot layout)
+  DEVICE_DTS := mt7981b-sx-7981r128-mtkuboot
+  DEVICE_DTS_DIR := ../dts-ext
+  SUPPORTED_DEVICES += mediatek,mt7981-spim-snand-7981r128
+  UBINIZE_OPTS := -E 5
+  BLOCKSIZE := 128k
+  PAGESIZE := 2048
+  IMAGE_SIZE := 65536k
+  KERNEL_IN_UBI := 1
+  IMAGES += factory.bin
+  IMAGE/factory.bin := append-ubi | check-size $$$$(IMAGE_SIZE)
+  IMAGE/sysupgrade.bin := sysupgrade-tar | append-metadata
+  DEVICE_PACKAGES := kmod-usb3 automount
+endef
+TARGET_DEVICES += sx_7981r128-mtkuboot
+
 define Device/wirelesstag_zx7981pd-ubootmod
   DEVICE_VENDOR := Wireless-Tag
   DEVICE_MODEL := ZX7981PD

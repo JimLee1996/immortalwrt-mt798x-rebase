@@ -176,7 +176,8 @@ platform_do_upgrade() {
 	cudy,wr3000h-v1|\
 	cudy,wr3000p-v1|\
 	huasifei,wh3000-pro-nand|\
-	ruijie,rg-x30e-pro)
+	ruijie,rg-x30e-pro|\
+	sx,7981r128-mtkuboot)
 		CI_UBIPART="ubi"
 		nand_do_upgrade "$1"
 		;;

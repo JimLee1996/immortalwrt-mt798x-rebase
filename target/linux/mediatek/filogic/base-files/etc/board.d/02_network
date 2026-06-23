@@ -141,6 +141,9 @@ mediatek_setup_interfaces()
 	wirelesstag,zx7981pd-ubootmod)
 		ucidef_set_interfaces_lan_wan "lan1 lan2" wan
 		;;
+	sx,7981r128-mtkuboot)
+		ucidef_set_interfaces_lan_wan "lan1 lan2" eth1
+		;;
 	airpi,ap3000m|\
 	bananapi,bpi-r3-mini|\
 	edgecore,eap111|\

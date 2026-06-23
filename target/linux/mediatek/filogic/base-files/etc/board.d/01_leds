@@ -246,6 +246,13 @@ routerich,be7200)
 	ucidef_set_led_netdev "wan-off" "wan-off" "red:wan" "wan" "link"
 	ucidef_set_led_netdev "wlan5g" "wlan-5ghz" "blue:wlan-5ghz" "phy0.1-ap0" "link tx rx"
 	;;
+sx,7981r128-mtkuboot)
+	ucidef_set_led_default "power" "POWER" "green:power" "1"
+	ucidef_set_led_netdev "lan" "LAN" "green:lan" "lan2" "link tx rx"
+	ucidef_set_led_netdev "sfp" "SFP" "green:sfp" "eth1" "link tx rx"
+	ucidef_set_led_netdev "wlan5g" "WIFI5G" "green:wlan-5ghz" "rax0"
+	ucidef_set_led_netdev "wlan2g" "WIFI2G" "green:wlan-2ghz" "ra0"
+	;;
 smartrg,sdg-8612)
 	ucidef_set_led_netdev "lan4" "LAN4" "mdio-bus:05:amber:lan" "lan4" "link_10 link_100"
 	ucidef_set_led_netdev "lan4" "LAN4" "mdio-bus:05:green:lan-0" "lan4" "link_1000"

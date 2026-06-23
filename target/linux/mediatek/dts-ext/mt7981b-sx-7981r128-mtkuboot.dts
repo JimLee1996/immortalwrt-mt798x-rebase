@@ -1,0 +1,18 @@
+// SPDX-License-Identifier: GPL-2.0-only OR MIT
+
+/dts-v1/;
+#include "../dts/mt7981b-sx-7981r128.dts"
+
+/ {
+	model = "SX 7981R128 (MTK U-Boot layout)";
+	compatible = "sx,7981r128-mtkuboot", "mediatek,mt7981";
+
+	chosen {
+		/delete-property/ bootargs-append;
+		/delete-property/ rootdisk;
+	};
+};
+
+&ubi {
+	/delete-node/ volumes;
+};
