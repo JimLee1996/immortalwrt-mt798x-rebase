@@ -176,6 +176,7 @@ platform_do_upgrade() {
 	cudy,wr3000h-v1|\
 	cudy,wr3000p-v1|\
 	huasifei,wh3000-pro-nand|\
+	mediatek,zhao-7981r128-d|\
 	ruijie,rg-x30e-pro)
 		CI_UBIPART="ubi"
 		nand_do_upgrade "$1"
@@ -346,6 +347,7 @@ platform_check_image() {
 		;;
 	creatlentem,clt-r30b1|\
 	creatlentem,clt-r30b1-112m|\
+	mediatek,zhao-7981r128-d|\
 	nradio,c8-668gl)
 		# tar magic `ustar`
 		magic="$(dd if="$1" bs=1 skip=257 count=5 2>/dev/null)"
