@@ -1,0 +1,335 @@
+target/linux/mediatek/dts-ext/mt7981b-zhao-7981r128-dsa-mtkuboot.dts
+  s_4d22002b0bbaae::t_9f38f0b6abebc2 1-149,151-317 gitai:{"mixed_line_ranges":[],"operations":[{"operation_id":"6a3ab2160deba0df8046fca4","tool_type":"agent","tool_id":"apply_patch","line_ranges":[{"Range":[1,149]},{"Range":[151,317]}]}]}
+  s_4d22002b0bbaae::t_ea832801dbddc0 150 gitai:{"mixed_line_ranges":[],"operations":[{"operation_id":"6a3ab2e90deba0df8046fde0","tool_type":"agent","tool_id":"apply_patch","line_ranges":[{"Single":150}]}]}
+target/linux/mediatek/image/filogic-ext.mk
+  s_4d22002b0bbaae::t_5edab019fa0991 156-174 gitai:{"mixed_line_ranges":[],"operations":[{"operation_id":"6a3ab2380deba0df8046fce0","tool_type":"agent","tool_id":"apply_patch","line_ranges":[{"Range":[156,174]}]}]}
+  s_4d22002b0bbaae::t_922a82d621af93 6 gitai:{"mixed_line_ranges":[],"operations":[{"operation_id":"6a3ab4cc0deba0df8046fe85","tool_type":"agent","tool_id":"apply_patch","line_ranges":[{"Single":6}]}]}
+target/linux/mediatek/filogic/base-files/etc/board.d/02_network
+  s_4d22002b0bbaae::t_854b9e033be689 144-146,301-304 gitai:{"mixed_line_ranges":[],"operations":[{"operation_id":"6a3ab2670deba0df8046fd45","tool_type":"agent","tool_id":"apply_patch","line_ranges":[{"Range":[144,146]},{"Range":[301,304]}]}]}
+target/linux/mediatek/filogic/base-files/etc/board.d/01_leds
+  s_4d22002b0bbaae::t_4c40a143124510 226-231 gitai:{"mixed_line_ranges":[],"operations":[{"operation_id":"6a3ab2550deba0df8046fd15","tool_type":"agent","tool_id":"apply_patch","line_ranges":[{"Range":[226,231]}]}]}
+target/linux/mediatek/filogic/base-files/lib/upgrade/platform.sh
+  s_4d22002b0bbaae::t_8f71281a2948c8 179,350 gitai:{"mixed_line_ranges":[],"operations":[{"operation_id":"6a3ab2770deba0df8046fd74","tool_type":"agent","tool_id":"apply_patch","line_ranges":[{"Single":179},{"Single":350}]}]}
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.2",
+  "base_commit_sha": "7fcf2f3b8649e42aa81b0622e840f56df0cecf99",
+  "prompts": {},
+  "sessions": {
+    "s_4d22002b0bbaae": {
+      "agent_id": {
+        "tool": "trae",
+        "id": "6a3aa9b95d5dfe06df639b3f",
+        "model": "gpt-5.5__max"
+      },
+      "human_author": "JimLee1996 <59061463@qq.com>"
+    }
+  },
+  "attestation_metadata": {
+    "target/linux/mediatek/dts-ext/mt7981b-zhao-7981r128-dsa-mtkuboot.dts": [
+      {
+        "hash": "s_4d22002b0bbaae::t_9f38f0b6abebc2",
+        "line_ranges": [
+          {
+            "Range": [
+              1,
+              149
+            ]
+          },
+          {
+            "Range": [
+              151,
+              317
+            ]
+          }
+        ],
+        "mixed_line_ranges": [],
+        "operations": [
+          {
+            "operation_id": "6a3ab2160deba0df8046fca4",
+            "tool_type": "agent",
+            "tool_id": "apply_patch",
+            "line_ranges": [
+              {
+                "Range": [
+                  1,
+                  149
+                ]
+              },
+              {
+                "Range": [
+                  151,
+                  317
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "hash": "s_4d22002b0bbaae::t_ea832801dbddc0",
+        "line_ranges": [
+          {
+            "Single": 150
+          }
+        ],
+        "mixed_line_ranges": [],
+        "operations": [
+          {
+            "operation_id": "6a3ab2e90deba0df8046fde0",
+            "tool_type": "agent",
+            "tool_id": "apply_patch",
+            "line_ranges": [
+              {
+                "Single": 150
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "target/linux/mediatek/filogic/base-files/etc/board.d/01_leds": [
+      {
+        "hash": "s_4d22002b0bbaae::t_4c40a143124510",
+        "line_ranges": [
+          {
+            "Range": [
+              226,
+              231
+            ]
+          }
+        ],
+        "mixed_line_ranges": [],
+        "operations": [
+          {
+            "operation_id": "6a3ab2550deba0df8046fd15",
+            "tool_type": "agent",
+            "tool_id": "apply_patch",
+            "line_ranges": [
+              {
+                "Range": [
+                  226,
+                  231
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "target/linux/mediatek/filogic/base-files/etc/board.d/02_network": [
+      {
+        "hash": "s_4d22002b0bbaae::t_854b9e033be689",
+        "line_ranges": [
+          {
+            "Range": [
+              144,
+              146
+            ]
+          },
+          {
+            "Range": [
+              301,
+              304
+            ]
+          }
+        ],
+        "mixed_line_ranges": [],
+        "operations": [
+          {
+            "operation_id": "6a3ab2670deba0df8046fd45",
+            "tool_type": "agent",
+            "tool_id": "apply_patch",
+            "line_ranges": [
+              {
+                "Range": [
+                  144,
+                  146
+                ]
+              },
+              {
+                "Range": [
+                  301,
+                  304
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "target/linux/mediatek/filogic/base-files/lib/upgrade/platform.sh": [
+      {
+        "hash": "s_4d22002b0bbaae::t_8f71281a2948c8",
+        "line_ranges": [
+          {
+            "Single": 179
+          },
+          {
+            "Single": 350
+          }
+        ],
+        "mixed_line_ranges": [],
+        "operations": [
+          {
+            "operation_id": "6a3ab2770deba0df8046fd74",
+            "tool_type": "agent",
+            "tool_id": "apply_patch",
+            "line_ranges": [
+              {
+                "Single": 179
+              },
+              {
+                "Single": 350
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "target/linux/mediatek/image/filogic-ext.mk": [
+      {
+        "hash": "s_4d22002b0bbaae::t_5edab019fa0991",
+        "line_ranges": [
+          {
+            "Range": [
+              156,
+              174
+            ]
+          }
+        ],
+        "mixed_line_ranges": [],
+        "operations": [
+          {
+            "operation_id": "6a3ab2380deba0df8046fce0",
+            "tool_type": "agent",
+            "tool_id": "apply_patch",
+            "line_ranges": [
+              {
+                "Range": [
+                  156,
+                  174
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "hash": "s_4d22002b0bbaae::t_922a82d621af93",
+        "line_ranges": [
+          {
+            "Single": 6
+          }
+        ],
+        "mixed_line_ranges": [],
+        "operations": [
+          {
+            "operation_id": "6a3ab4cc0deba0df8046fe85",
+            "tool_type": "agent",
+            "tool_id": "apply_patch",
+            "line_ranges": [
+              {
+                "Single": 6
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "remote_transcripts": {
+    "s_4d22002b0bbaae": {
+      "tool": "trae",
+      "conversation_id": "6a3aa9b95d5dfe06df639b3f",
+      "session_id": "6a3aa9b95d5dfe06df639b3f",
+      "status": "remote_only",
+      "message": "Remote transcript resolution is not implemented yet for TRAE prompts."
+    },
+    "s_4d22002b0bbaae::t_4c40a143124510": {
+      "tool": "trae",
+      "conversation_id": "6a3aa9b95d5dfe06df639b3f",
+      "session_id": "6a3aa9b95d5dfe06df639b3f",
+      "status": "remote_only",
+      "message": "Remote transcript resolution is not implemented yet for TRAE prompts."
+    },
+    "s_4d22002b0bbaae::t_5edab019fa0991": {
+      "tool": "trae",
+      "conversation_id": "6a3aa9b95d5dfe06df639b3f",
+      "session_id": "6a3aa9b95d5dfe06df639b3f",
+      "status": "remote_only",
+      "message": "Remote transcript resolution is not implemented yet for TRAE prompts."
+    },
+    "s_4d22002b0bbaae::t_854b9e033be689": {
+      "tool": "trae",
+      "conversation_id": "6a3aa9b95d5dfe06df639b3f",
+      "session_id": "6a3aa9b95d5dfe06df639b3f",
+      "status": "remote_only",
+      "message": "Remote transcript resolution is not implemented yet for TRAE prompts."
+    },
+    "s_4d22002b0bbaae::t_8f71281a2948c8": {
+      "tool": "trae",
+      "conversation_id": "6a3aa9b95d5dfe06df639b3f",
+      "session_id": "6a3aa9b95d5dfe06df639b3f",
+      "status": "remote_only",
+      "message": "Remote transcript resolution is not implemented yet for TRAE prompts."
+    },
+    "s_4d22002b0bbaae::t_922a82d621af93": {
+      "tool": "trae",
+      "conversation_id": "6a3aa9b95d5dfe06df639b3f",
+      "session_id": "6a3aa9b95d5dfe06df639b3f",
+      "status": "remote_only",
+      "message": "Remote transcript resolution is not implemented yet for TRAE prompts."
+    },
+    "s_4d22002b0bbaae::t_9f38f0b6abebc2": {
+      "tool": "trae",
+      "conversation_id": "6a3aa9b95d5dfe06df639b3f",
+      "session_id": "6a3aa9b95d5dfe06df639b3f",
+      "status": "remote_only",
+      "message": "Remote transcript resolution is not implemented yet for TRAE prompts."
+    },
+    "s_4d22002b0bbaae::t_ea832801dbddc0": {
+      "tool": "trae",
+      "conversation_id": "6a3aa9b95d5dfe06df639b3f",
+      "session_id": "6a3aa9b95d5dfe06df639b3f",
+      "status": "remote_only",
+      "message": "Remote transcript resolution is not implemented yet for TRAE prompts."
+    },
+    "s_d83dae225baa66": {
+      "tool": "trae",
+      "conversation_id": "6a39d52a5d5dfe06df6398f6",
+      "session_id": "6a39d52a5d5dfe06df6398f6",
+      "status": "remote_only",
+      "message": "Remote transcript resolution is not implemented yet for TRAE prompts."
+    },
+    "s_d83dae225baa66::t_1688488cc9d51c": {
+      "tool": "trae",
+      "conversation_id": "6a39d52a5d5dfe06df6398f6",
+      "session_id": "6a39d52a5d5dfe06df6398f6",
+      "status": "remote_only",
+      "message": "Remote transcript resolution is not implemented yet for TRAE prompts."
+    },
+    "s_d83dae225baa66::t_7ac829185187b8": {
+      "tool": "trae",
+      "conversation_id": "6a39d52a5d5dfe06df6398f6",
+      "session_id": "6a39d52a5d5dfe06df6398f6",
+      "status": "remote_only",
+      "message": "Remote transcript resolution is not implemented yet for TRAE prompts."
+    },
+    "s_d83dae225baa66::t_dd1f6f11a2924a": {
+      "tool": "trae",
+      "conversation_id": "6a39d52a5d5dfe06df6398f6",
+      "session_id": "6a39d52a5d5dfe06df6398f6",
+      "status": "remote_only",
+      "message": "Remote transcript resolution is not implemented yet for TRAE prompts."
+    },
+    "s_d83dae225baa66::t_ef1718bc8b97f8": {
+      "tool": "trae",
+      "conversation_id": "6a39d52a5d5dfe06df6398f6",
+      "session_id": "6a39d52a5d5dfe06df6398f6",
+      "status": "remote_only",
+      "message": "Remote transcript resolution is not implemented yet for TRAE prompts."
+    }
+  }
+}
