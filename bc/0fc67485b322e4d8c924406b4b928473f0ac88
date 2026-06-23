@@ -1,0 +1,22 @@
+target/linux/mediatek/image/filogic-ext.mk
+  s_4d22002b0bbaae::t_ac8d73e51a3744 163
+  s_4d22002b0bbaae::t_5edab019fa0991 156-162,164-174
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.2",
+  "base_commit_sha": "bc0fc67485b322e4d8c924406b4b928473f0ac88",
+  "prompts": {},
+  "sessions": {
+    "s_4d22002b0bbaae": {
+      "agent_id": {
+        "tool": "trae",
+        "id": "6a3aa9b95d5dfe06df639b3f",
+        "model": "gpt-5.5__max"
+      },
+      "human_author": null
+    }
+  },
+  "attestation_metadata": {},
+  "remote_transcripts": {}
+}
