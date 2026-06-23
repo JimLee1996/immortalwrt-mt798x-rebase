@@ -135,11 +135,13 @@ define Device/sx_7981r128-mtkuboot
   BLOCKSIZE := 128k
   PAGESIZE := 2048
   IMAGE_SIZE := 65536k
+  KERNEL_LOADADDR := 0x48080000
+  UBOOTENV_IN_UBI := 1
   KERNEL_IN_UBI := 1
   IMAGES += factory.bin
   IMAGE/factory.bin := append-ubi | check-size $$$$(IMAGE_SIZE)
   IMAGE/sysupgrade.bin := sysupgrade-tar | append-metadata
-  DEVICE_PACKAGES := kmod-usb3 automount
+  DEVICE_PACKAGES := kmod-usb3 kmod-sfp kmod-i2c-gpio automount
 endef
 TARGET_DEVICES += sx_7981r128-mtkuboot
 
